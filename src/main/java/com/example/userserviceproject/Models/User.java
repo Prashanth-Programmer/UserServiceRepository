@@ -1,4 +1,4 @@
-package Models;
+package com.example.userserviceproject.Models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;

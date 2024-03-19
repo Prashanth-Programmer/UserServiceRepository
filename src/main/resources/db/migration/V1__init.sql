@@ -1,22 +1,22 @@
 CREATE TABLE `role`
 (
-    id   INT NOT NULL,
+    id   BIGINT NOT NULL,
     name VARCHAR(255) NULL,
     CONSTRAINT pk_role PRIMARY KEY (id)
 );
 
 CREATE TABLE token
 (
-    id              INT NOT NULL,
+    id              BIGINT NOT NULL,
     value           VARCHAR(255) NULL,
-    user_id         INT NULL,
+    user_id         BIGINT NULL,
     expiration_date datetime NULL,
     CONSTRAINT pk_token PRIMARY KEY (id)
 );
 
 CREATE TABLE user
 (
-    id              INT    NOT NULL,
+    id              BIGINT NOT NULL,
     name            VARCHAR(255) NULL,
     email           VARCHAR(255) NULL,
     hashed_password VARCHAR(255) NULL,
@@ -26,8 +26,8 @@ CREATE TABLE user
 
 CREATE TABLE user_roles
 (
-    user_id  INT NOT NULL,
-    roles_id INT NOT NULL
+    user_id  BIGINT NOT NULL,
+    roles_id BIGINT NOT NULL
 );
 
 ALTER TABLE token

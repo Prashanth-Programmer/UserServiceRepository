@@ -1,4 +1,4 @@
-package Models;
+package com.example.userserviceproject.Models;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
@@ -11,5 +11,5 @@ import lombok.Setter;
 @MappedSuperclass
 public class BaseModel{
     @Id
-    private int id;
+    private long id;
 }
